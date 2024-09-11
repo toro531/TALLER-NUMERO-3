@@ -1,0 +1,23 @@
+Inicio
+
+Entradas
+
+ distancia_km distancia en kilómetros.
+ tiempo_min tiempo detenido en minutos.
+ hora_inicio hora de inicio en formato 24 horas
+Calcular Tarifa por Distancia
+
+Si distancia_km <= 5, entonces tarifa_km = 1500.
+Si distancia_km > 5 y distancia_km ≤ 10, entonces tarifa_km = 1350.
+Si distancia_km > 10, entonces tarifa_km = 1100.
+Calcular Costos
+
+costo_distancia = distancia_km × tarifa_km.
+costo_tiempo_detencion = tiempo_min × 400.
+Calcular Recargo Nocturno
+
+Si hora_inicio ≥ 22 o hora_inicio ≤ 6, entonces recargo_nocturno = costo_distancia × 0.35.
+De lo contrario, recargo_nocturno = 0.
+Calcular Tarifa Total
+
+tarifa_total = tarifa_base + costo_distancia + costo_tiempo_detencion + recargo_nocturno.
